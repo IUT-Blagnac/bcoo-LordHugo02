@@ -1,4 +1,4 @@
-@startuml Titre
+@startuml DiagLigne
 '--------------------------------
 ' Parametres pour le dessin
 '--------------------------------
@@ -7,8 +7,13 @@ hide empty members
 hide empty methods
 '--------------------------------
 
-class Point {
+class Ligne{ 
+Point A
+Point B
+}
+class Point extends Ligne {
 x
 y
 }
+
 @enduml
