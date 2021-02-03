@@ -4,7 +4,7 @@ public class point
 {
 
 
-	public point()
+	public Point()
 	{
 
 		float x, y, rho, theta;
