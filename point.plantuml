@@ -7,8 +7,8 @@ hide empty members
 hide empty methods
 '--------------------------------
 
-class Etudiant {
-nom
-prenom
+class Point {
+x
+y
 }
 @enduml
