@@ -28,7 +28,8 @@ class Note
 
 class Cours
 {
-    
+    titre
+    module
 }
 
 class Enseignant
@@ -38,7 +39,9 @@ class Enseignant
 }
 
 
-examen "0..*" -- "1" cours : Concerne
+Examen "0..*" -- "1" Cours : Concerne
+(Etudiant, Examen) . Note
+Cours "1" -- "*" Enseignant : Enseigné
 
 @enduml
 
