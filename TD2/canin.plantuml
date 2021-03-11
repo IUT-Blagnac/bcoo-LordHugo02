@@ -60,6 +60,7 @@ class Possession
 }
 
 
+
 Chien "1..*" -- "0..10" Propriétaire : Possède
 Chien "1..*" -- "0..10" Concours : Participer
 Concours "0..*" -- "0..*" Ville 
@@ -67,8 +68,6 @@ Concours "0..*" -- "0..*" Ville
 (Chien, Concours) . Participation
 (Concours, Ville). Organisation
 (Chien, Propriétaire). Possession
-
-
 
 
 @enduml
