@@ -1,0 +1,29 @@
+
+@startuml DiagLigne
+'--------------------------------
+' Parametres pour le dessin
+'--------------------------------
+hide circle
+hide empty members
+hide empty methods
+'--------------------------------
+Class Accident
+{
+nombreAccident
+
+
+
+}
+
+Class employé
+{
+    id 
+    departement
+    name
+    supervisor
+    other_employee_detail
+
+}
+
+
+@enduml

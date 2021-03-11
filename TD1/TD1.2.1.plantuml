@@ -24,7 +24,7 @@ class Examen
 class Note
 {
     
-    
+
 }
 
 class Cours
@@ -43,7 +43,9 @@ class Enseignant
 
 Examen "0..*" -- "1" Cours : Concerne
 (Etudiant, Examen) . Note
-Cours "1" -- "*" Enseignant : Enseigné
+Cours "1" -left- "*" Enseignant : Enseigne
+Cours "1" -- "*" Etudiant : Suivre
+
 
 @enduml
 

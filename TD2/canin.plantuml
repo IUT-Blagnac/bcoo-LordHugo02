@@ -1,0 +1,66 @@
+@startuml Titre
+'--------------------------------
+' Parametres pour le dessin
+'--------------------------------
+hide circle
+hide empty members
+hide empty methods
+'--------------------------------
+
+class Chien
+{
+    numéro
+    race
+    nom
+    adresse propriétaire
+    date possession
+
+}
+
+class Propriétaire
+{
+
+
+}
+
+class Race
+{
+    race1
+    race2
+    race3
+    rae4
+
+}
+
+class Concours 
+{
+
+
+
+}
+
+class Participation
+{
+    classement
+}
+
+class Ville
+{
+
+}
+
+class Organisation
+{
+    date
+}
+
+
+Chien "1..*" -- "0..10" Propriétaire : Possède
+Chien "1..*" -- "0..10" Concours : Participer
+Concours "0..*" -- "0..*" Ville 
+
+(Chien, Concours) . Participation
+(Concours, Ville). Organisation
+
+
+@enduml
