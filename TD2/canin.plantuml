@@ -24,10 +24,16 @@ class Propriétaire
 
 class Race
 {
-    race1
-    race2
-    race3
-    rae4
+   Boxer 
+   Berger allemand 
+   Labrador 
+   Chihuahua 
+   Golden retriver 
+   Bouvier des flandres 
+   Husky 
+   Shiba inu 
+   Chowchow 
+   
 
 }
 
@@ -62,6 +68,7 @@ class Possession
 
 
 Chien "1..*" -- "0..10" Propriétaire : Possède
+Chien "1" -- "1..*" Race : Possède
 Chien "1..*" -- "0..10" Concours : Participer
 Concours "0..*" -- "0..*" Ville 
 
