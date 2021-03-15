@@ -9,7 +9,7 @@ hide empty methods
 '--------------------------------
 
 
-class Entreprise
+class Stage
 {
     lieuS
     dateS
@@ -18,10 +18,27 @@ class Entreprise
     thèmeS
 }
 
-class Organisation
+class Entreprise
 {
-    date
+    nom 
+    adresse 
+    siege
 }
+
+class Etudiant
+{
+    num 
+    nom 
+    prenom 
+    moyenne 
+}
+
+
+Entreprise "1" -- "*" Stage : Propose
+
+
+
+
 
 
 
