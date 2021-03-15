@@ -1,0 +1,31 @@
+@startuml Titre
+'--------------------------------
+' Parametres pour le dessin
+'--------------------------------
+'--http://iut-blagnac.github.io/POO/TD3.html--
+hide circle
+hide empty members
+hide empty methods
+'--------------------------------
+
+
+class Entreprise
+{
+    lieuS
+    dateS
+    NomE 
+    nomTuteur
+    thèmeS
+}
+
+class Organisation
+{
+    date
+}
+
+
+
+
+
+
+@enduml
