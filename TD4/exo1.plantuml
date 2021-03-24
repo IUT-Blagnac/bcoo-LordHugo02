@@ -26,16 +26,27 @@ hide empty methods
 '2.1.2. Question
 'Modéliser cette situation par un diagramme de cas d’utilisation.
 
-usecase (Réserver salle de cours/ matériel) as Reserver
+usecase (Réserver) as Reserver
+
+usecase (Réserver salle) as SReserver
+usecase (Réserver matériel) as MReserver
+
 usecase (Consulter edt) as Consulter
 usecase (Consulter récapitulatif) as CRecap
 usecase (Éditer récapitulatif) as ERecap
+usecase (Disponible?) as Dispo
 actor Enseignant
 actor Etudiant
 actor Responsable
 
 Enseignant -|> Etudiant
 Responsable -|> Enseignant
+
+Reserver --> SReserver
+Reserver --> MReserver
+
+SReserver --> Dispo
+MReserver --> Dispo
 
 Enseignant --> Reserver
 Enseignant --> CRecap
