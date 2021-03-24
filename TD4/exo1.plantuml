@@ -8,39 +8,27 @@ hide empty members
 hide empty methods
 '--------------------------------
 
+'4.2.1
 
-class Stage
-{
-    lieuS
-    dateS
-    NomE 
-    nomTuteur
-    thèmeS
-}
+'2.1.1. Énoncé
+'Dans un établissement scolaire, on désire gérer la réservation 
+'des salles de cours et du matériel pédagogique (ordinateur portable 
+'et/ou vidéo-projecteur). Seuls les enseignants sont habilités à
+' effectuer des réservations (sous réserve de disponibilité de la 
+' salle ou du matériel). Le planning des salles peut quant à lui 
+' être consulté par tout le monde (enseignants et étudiants). Par
+'  contre, le récapitulatif horaire par enseignant (calculé à partir
+'   du planning des salles) ne peut être consulté que par les enseignants.
+'   nfin, il existe pour chaque formation un enseignant responsable qui
+'    seul peut éditer le récapitulatif horaire pour l’ensemble de la
+'     formation.'
 
-class Entreprise
-{
-    nom 
-    adresse 
-    siege
-}
+'2.1.2. Question
+'Modéliser cette situation par un diagramme de cas d’utilisation.
 
-class Etudiant
-{
-    num 
-    nom 
-    prenom 
-    moyenne 
-}
-
-
-Entreprise "1" -- "*" Stage : Propose
-
-
-
-
-
-
+usecase (réserver salle de cours)
+usecase (réserver matériel)
+actor enseignant
 
 
 
