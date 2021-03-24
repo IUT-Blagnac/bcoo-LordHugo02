@@ -26,7 +26,7 @@ hide empty methods
 actor Client
 usecase (Regarder rayons) as Regarder 
 usecase (Demander renseignements) as Demander 
-usecase (Prends un article) as Prendre 
+usecase (Prendre un article) as Prendre 
 usecase (Paye) as Payer
 usecase (Bénéficier d'une réduction) as Reduction
 
