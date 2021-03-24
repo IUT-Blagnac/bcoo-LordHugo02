@@ -23,6 +23,7 @@ hide empty methods
 
 
 
+
 actor Client
 usecase (Regarder rayons) as Regarder 
 usecase (Demander renseignements) as Demander 
