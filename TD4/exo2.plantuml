@@ -34,6 +34,7 @@ Client --> Regarder
 Client --> Demander
 Demander --> Prendre 
 Regarder --> Prendre 
+Demander <--> Regarder
 Prendre --> Payer 
 Payer --> Reduction
 
