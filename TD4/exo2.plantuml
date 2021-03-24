@@ -1,0 +1,41 @@
+@startuml Titre
+'--------------------------------
+' Parametres pour le dessin
+'--------------------------------
+'--http://iut-blagnac.github.io/POO/TD3.html--
+hide circle
+hide empty members
+hide empty methods
+'--------------------------------
+
+'4.2.3
+
+'2.2.1. Énoncé
+'Dans un magasin,
+' le processus de vente
+'  est le suivant : le client entre, passe dans
+'   les rayons, demande éventuellement des renseignements 
+'   ou procède à des essais, prend des articles (si le 
+'   stock est suffisant), passe à la caisse où il règle 
+'   ses achats (avec tout moyen de paiement accepté). 
+'   Il peut éventuellement bénéficier d’une réduction.
+
+
+
+
+actor Client
+usecase (Regarder rayons) as Regarder 
+usecase (Demander renseignements) as Demander 
+usecase (Prends un article) as Prendre 
+usecase (Paye) as Payer
+usecase (Bénéficier d'une réduction) as Reduction
+
+Client --> Regarder
+Client --> Demander
+Demander --> Prendre 
+Regarder --> Prendre 
+Prendre --> Payer 
+Payer --> Reduction
+
+
+@enduml
