@@ -26,11 +26,20 @@ hide empty methods
 '2.1.2. Question
 'Modéliser cette situation par un diagramme de cas d’utilisation.
 
-usecase (réserver salle de cours)
-usecase (réserver matériel)
-actor enseignant
+usecase (Réserver salle de cours/ matériel) as Reserver
+usecase (Consulter edt) as Consulter
+usecase (Consulter récapitulatif) as CRecap
+usecase (Éditer récapitulatif) as ERecap
+actor Enseignant
+actor Etudiant
+actor Responsable
 
+Enseignant -|> Etudiant
+Responsable -|> Enseignant
 
-
+Enseignant --> Reserver
+Enseignant --> CRecap
+Etudiant --> Consulter
+Responsable --> ERecap
 
 @enduml
