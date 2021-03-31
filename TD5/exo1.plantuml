@@ -11,8 +11,14 @@ hide empty methods
 '5.1.1
 
 
-participant A as client 
-participant B as caissier 
+participant A as "client"
+participant B as "caissier"
+participant C as "produit"
+participant D as "Tapis"
+
+A -> B
+activate B
+
 
 
 @enduml
