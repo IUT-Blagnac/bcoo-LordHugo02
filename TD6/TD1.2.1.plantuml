@@ -1,0 +1,51 @@
+@startuml Titre
+'--------------------------------
+' Parametres pour le dessin
+'--------------------------------
+hide circle
+hide empty members
+hide empty methods
+'--------------------------------
+
+class Etudiant
+ {
+    numeroEtu
+    nomEtu
+    prenomEtu
+    dTNEtu
+}
+
+class Examen
+{
+    dateExam
+    coefficientExam
+}
+
+class Note
+{
+    
+
+}
+
+class Cours
+{
+    titre
+    module
+}
+
+
+class Enseignant
+{
+   nomE 
+   prenomE
+}
+
+
+Examen "0..*" -- "1" Cours : Concerne
+(Etudiant, Examen) . Note
+Cours "1" -left- "*" Enseignant : Enseigne
+Cours "1" -- "*" Etudiant : Suivre
+
+
+@enduml
+
